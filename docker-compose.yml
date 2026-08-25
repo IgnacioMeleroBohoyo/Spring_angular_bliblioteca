@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: smartbuy-postgres
+    environment:
+      POSTGRES_USER: smartbuy
+      POSTGRES_PASSWORD: smartbuy
+      POSTGRES_DB: smartbuy
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    driver: local
+
+# Comment about PostgreSQL configuration
+# This container runs PostgreSQL for the SmartBuy AI project

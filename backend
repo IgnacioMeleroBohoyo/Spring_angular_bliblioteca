@@ -1,0 +1,21 @@
+# Backend directory - SmartBuy AI
+# This is a Maven project for the backend services
+# Ensure Java 21 and Maven are installed
+# Run mvnw.cmd clean test to build
+
+# Example Spring Boot application
+# Add your Spring Boot configuration here
+
+# PostgreSQL Configuration
+# Ensure docker-compose.yml is properly configured
+
+# Security Configuration
+# Add your security setup here
+
+# Actuator Endpoints
+# /actuator/health
+# /actuator/info
+# /actuator/metrics
+
+# OpenAPI/Swagger Configuration
+# Enable API documentation here
